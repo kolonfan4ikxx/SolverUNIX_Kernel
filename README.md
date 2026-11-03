@@ -1,5 +1,4 @@
-# SolverUNIX Kernel|SolverUNIX/KNG UNIX
-An official SolverUNIX Kernel repository
+# SolverUNIX Kernel
 
 **Ядро операционной системы SolverUNIX KNG**
 
@@ -138,3 +137,101 @@ The project aims to build its own software ecosystem from the ground up.
 - Develop an independent x86_64 kernel.
 - Create `solibc` — a native C standard library implementation.
 - Develop `sol6` — a native initialization system.
+- Implement memory and process management.
+- Develop native system calls.
+- Create a modular driver architecture.
+- Build a native userland environment.
+- Support ELF executable loading.
+
+## Architecture
+
+| Component | Description |
+|---|---|
+| `SolverUNIX Kernel` | Main operating system kernel |
+| `solibc` | Native C library |
+| `sol6` | Initialization system |
+| `solas` | System command interface |
+| `solpkg` | Package management system |
+| `KFS` | SolverUNIX filesystem infrastructure |
+
+Some components are planned and may not yet be implemented.
+
+## Target platform
+
+| Property | Value |
+|---|---|
+| Architecture | x86_64 |
+| Platform | Bare metal |
+| Executable format | ELF |
+| Compiler target | `x86_64-elf` |
+| Build system | GNU Make |
+| Languages | C, Assembly |
+
+## Development
+
+SolverUNIX Kernel is currently experimental and under active development.
+
+The main development principle is independence from existing operating system kernels.
+
+### Requirements
+
+- GNU Make
+- `x86_64-elf-gcc`
+- `x86_64-elf-binutils`
+- An ELF-compatible linker
+- QEMU for virtual machine testing
+
+**Important:** MinGW GCC (`x86_64-w64-mingw32`) targets Windows and is not a replacement for the `x86_64-elf` cross-compiler.
+
+### Building
+
+Build instructions will be added once the kernel build system becomes stable.
+
+## Project structure
+
+The directory structure is subject to change during development.
+
+```text
+SolverUNIX/
+├── kernel/
+├── include/
+├── linker.ld
+├── Makefile
+└── README.md
+```
+
+## Roadmap
+
+- [ ] Establish the x86_64 boot process
+- [ ] Kernel entry point
+- [ ] Basic terminal output
+- [ ] GDT and IDT
+- [ ] Interrupt handling
+- [ ] Physical memory management
+- [ ] Virtual memory management
+- [ ] Basic process scheduler
+- [ ] System call interface
+- [ ] ELF loader
+- [ ] Driver infrastructure
+- [ ] Integration with solibc
+- [ ] Integration with sol6
+
+## Project philosophy
+
+SolverUNIX is built around one central idea:
+
+**Independence.**
+
+The project aims to develop its own kernel and native system infrastructure instead of relying on an existing operating system kernel.
+
+## License
+
+License information will be added later.
+
+---
+
+**SolverUNIX KNG**
+
+*Independent by design.*
+
+*Независимость — основа проекта.*
