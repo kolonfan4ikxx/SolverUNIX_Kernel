@@ -1,4 +1,4 @@
-# SolverUNIX_Kernel
+# SolverUNIX Kernel|SolverUNIX/KNG UNIX
 An official SolverUNIX Kernel repository
 
 **Ядро операционной системы SolverUNIX KNG**
