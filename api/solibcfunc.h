@@ -11,5 +11,6 @@
 #include "solweb.h"
 #include "solthread.h"
 #include "solnetwork.h"
+#include "solkookie.h"
 
 #endif
