@@ -75,7 +75,7 @@ SolverUNIX не является дистрибутивом Linux и не исп
 
 ### Сборка
 
-Инструкции по сборке будут добавлены после стабилизации системы сборки ядра.
+Инструкция по настройке MSYS2 и сборке в Windows: [docs/BUILD_MSYS2.md](docs/BUILD_MSYS2.md).
 
 ## Структура проекта
 
@@ -185,7 +185,7 @@ The main development principle is independence from existing operating system ke
 
 ### Building
 
-Build instructions will be added once the kernel build system becomes stable.
+See [docs/BUILD_MSYS2.md](docs/BUILD_MSYS2.md) for instructions on setting up MSYS2 and building on Windows.
 
 ## Project structure
 
